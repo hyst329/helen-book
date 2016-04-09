@@ -1,0 +1,19 @@
+Title         : Mastering Helen
+Author        : hyst329, &date;
+Logo          : True
+
+[TITLE]
+
+# Preface
+## Overview
+# Basics of Helen
+## First program
+# Built-in types
+## Integer types
+## Floating-point types
+# Functions and operators
+# Custom types and introduction to OOP
+# Inheritance and interfaces
+# Polymorphism. Operator overloading
+# Generics
+# Conclusion
