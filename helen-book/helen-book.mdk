@@ -5,9 +5,44 @@ Logo          : True
 [TITLE]
 
 # Preface
-## Overview
+## Overview. What is Helen?
+Helen (named after _Helen of Troy_) is a general-purpose programming language 
+designed for education, but can be used in any application. Also, Helen does 
+well integrate with C (by providing C function prototypes in Helen files and 
+even writing C-compatible functions for libraries (to be used from C programs)).
+## Why a new language?
+## Conventions used in this book 
 # Basics of Helen
 ## First program
+Now, let's write the <<Hello world>> program, according to the wide-spread
+tradition.
+```
+include core/string.f4i
+String greet = "Hello World!"
+out greet.cstr
+```
+Let's go deeper and explain the each line. In the first line you see `include`
+keyword following by a file path (`core/string.f4i`). If you do know C++
+(and are learning Helen only as a new language), just think that it behaves
+like a C++'s `#include` directive (yes, there's actually a directive in Helen).
+And if you don't, let's explain: the `include` directive in Helen tells the
+compiler to include (and how you've thought?) the file specified after that word
+(compiler searches for it in the defined list of directories; the `core/string.f4i`
+is the file for the `String` type, which allows you to use strings in your 
+programs).
+
+The second line creates a _variable_, named `greet`, of type `String`, and
+initialises it with the value `"Hello World!"` (a string which is written in
+double quotes is a _string literal_).
+
+And in the third line you see an output (`out`) instruction, which outputs the
+contents of `greet` into the standard output (usually, it is a console or a terminal) 
+~ Note
+As of Helen v0.1.4, you must specify the `cstr` field to output the string 
+contents.
+~
+## Compiling and running via the command line
+## Compiling and running via `helmake` tool
 # Built-in types
 ## Integer types
 ## Floating-point types
